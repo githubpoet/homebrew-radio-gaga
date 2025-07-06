@@ -7,8 +7,8 @@ class RadioGaga < Formula
   sha256 "185f6a9eca2bd7c229f013ceba9b7ee544847be4548ae2980ea84455350347cf"
   license "MIT"
 
-  depends_on "python@3.11"
   depends_on "ffmpeg"
+  depends_on "python@3.11"
 
   resource "requests" do
     url "https://files.pythonhosted.org/packages/9d/be/10918a2eac4ae9f02f6cfe6414b7a155ccd8f7f9d4380d62fd5b955065c3/requests-2.31.0.tar.gz"
