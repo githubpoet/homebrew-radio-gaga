@@ -11,10 +11,13 @@ class RadioGaga < Formula
   depends_on "python@3.11"
 
   def install
-    virtualenv_install_with_resources
+    virtualenv_create(libexec, "python3.11")
+    system libexec/"bin/pip", "install", "-r", "requirements.txt"
+    system libexec/"bin/pip", "install", buildpath
+    bin.install_symlink libexec/"bin/radio.py" => "radio-gaga"
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/radio-gaga --version")
+    assert_match "Radio Gaga", shell_output("#{bin}/radio-gaga --help")
   end
 end
