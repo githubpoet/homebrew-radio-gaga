@@ -11,10 +11,7 @@ class RadioGaga < Formula
   depends_on "python@3.11"
 
   def install
-    virtualenv_create(libexec, "python3.11")
-    system libexec/"bin/pip", "install", "-r", "requirements.txt"
-    system libexec/"bin/pip", "install", buildpath
-    bin.install_symlink libexec/"bin/radio.py" => "radio-gaga"
+    virtualenv_install_with_resources
   end
 
   test do
