@@ -3,8 +3,8 @@ class RadioGaga < Formula
 
   desc "Curses-based TUI radio streaming application"
   homepage "https://github.com/githubpoet/radio-gaga"
-  url "https://github.com/githubpoet/radio-gaga/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "7eb6207e6130aa7c39b3ea9618f5ee78163958bdbbb08c52460e7bbf42f025db"
+  url "https://github.com/githubpoet/radio-gaga/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "185f6a9eca2bd7c229f013ceba9b7ee544847be4548ae2980ea84455350347cf"
   license "MIT"
 
   depends_on "python@3.11"
